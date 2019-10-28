@@ -9,3 +9,10 @@ output:
 
 # Hello, welcome to my website
 
+My name is Lauren and I love cheese.
+
+
+
+![](https://media.giphy.com/media/YkdjQNu9YCSGNpELDt/giphy.gif)
+
+
