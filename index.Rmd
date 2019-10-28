@@ -1,5 +1,5 @@
 ---
-title: "My website"
+title: "Lauren Franks"
 output: 
   html_document:
     toc: true
@@ -7,5 +7,5 @@ output:
     theme: journal
 ---
 
-# This is Lauren's website
+# Hello, welcome to my website
 

@@ -8,6 +8,22 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+
+library(plotly)
+
+data("nyc_airbnb")
+
+set.seed(54)
+
+nyc_airbnb = 
+  nyc_airbnb %>% 
+  select(neighbourhood_group, neighbourhood, review_scores_location, price, room_type, lat, long, number_of_reviews, reviews_per_month, availability_365) %>% 
+  filter(!is.na(review_scores_location), price %in% 50:500, neighbourhood_group == "Manhattan") %>%
+  sample_n(5000)
 ```
 
 Column {data-width=650}
@@ -16,7 +32,8 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+nyc_airbnb %>% mutate(text_label = str_c("Neighborhood: ", neighbourhood, " Rating: ", review_scores_location)) %>% 
+  plot_ly(x = ~price, y = ~long, color = ~neighbourhood, type = "scatter", mode = "markers", text = ~text_label)
 ```
 
 Column {data-width=350}
@@ -25,12 +42,24 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+nyc_airbnb %>% group_by(neighbourhood) %>% 
+  summarise(
+    avg_price = round(sum(price)/n(), 2),
+    std_dev = round(sd(price), 2),
+    count = n()
+  ) %>% 
+  mutate(
+    neighbourhood = fct_reorder(neighbourhood, avg_price),
+    text_label = str_c(neighbourhood, " Avg $: ", avg_price, ", SD: ", std_dev, ", Count: ", count)) %>% 
+  plot_ly(y = ~avg_price, color = ~neighbourhood, type = "bar", 
+          error_y = ~list(array = std_dev), text = ~text_label)
 ```
 
 ### Chart C
 
 ```{r}
-
+nyc_airbnb %>% filter(room_type == "Private room") %>% 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
+  plot_ly(y = ~price, color = ~neighbourhood, type = "box")
 ```
 
