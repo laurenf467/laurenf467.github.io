@@ -7,7 +7,7 @@ navbar:
       href: About.html
     - text: examples
       menu:
-      - text: "Plotly"
+      - text: "Dashboard"
         href: Plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:lef2147@cumc.columbia.edu
