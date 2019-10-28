@@ -7,8 +7,66 @@ output:
     theme: journal
 ---
 
-# Lauren Franks
-## Resume
-### Accomplishments 
+# Resume
+My name is Lauren Franks and I am a graduate student at Columbia University Mailman School of Public Health. Check out my resume below. 
+
+## Education
+
+**Columbia University, Mailman School of Public Health, New York, NY**
+
+Master of Science in Biostatistics, Pharmaceutical Statistics Track, Graduation May 2020
+Cumulative GPA: 3.6
+
+**University of Pittsburgh, Dietrich School of Arts and Sciences, Pittsburgh, PA**
+
+Bachelor of Science in Biology; Minor in Applied Statistics and Chemistry, Graduation April 2018
+Cumulative GPA: 3.4
+
+
+## Professional Experience
+
+**COLUMBIA UNIVERSITY MAILMAN SCHOOL OF PUBLIC HEALTH DEPARTMENT OF BIOSTATISTICS, New York, NY**
+
+*Clinical Trials Intern, June 2019 – present*
+
+- Develop SAS programs to analyze breast cancer clinical data to determine medication compliance, tumor response and patient statuses; created baseline patient characteristics and AE tables
+- Collaborate with team members and Principle Investigator to resolve patient data issues
+- Provide input on trial data capture methods to improve standardization and efficiency
+- Analyze ongoing clinical trials to gauge adequacy of data and recommend areas of improvement 
+
+**BRAEBURN PHARMACEUTICALS, Plymouth Meeting, PA**
+
+*Medical Affairs Intern, December 2018 – January 2019*
+
+- Researched and identified hospitals utilizing buprenorphine treatment for opioid use disorder to direct commercial efforts; presented findings to senior leaders to describe the scope of opportunities
+
+**LANXESS, Pittsburgh, PA**
+
+*Technical Marketing Data Management Intern, May 2018 – July 2018*
+
+- Compiled historical microbiological data and created a user-friendly database to easily access information on past clients and improve efficiency of micro based laboratory; presented project outcome to senior leaders 
+
+**TEVA PHARMACEUTICALS, West Chester, PA**
+
+*Biological Researcher, May 2016—August 2016*
+
+- Investigated optimal conditions for biologic drug reslizumab using immunoglobulin technologies; 
+- Analyzed data and modified protocol based on results; presented poster on reslizumab results to colleagues 
+
+**UNIVERSITY OF PITTSBURGH BIOLOGY DEPARTMENT, Pittsburgh, PA**
+
+*Undergraduate Teacher’s Assistant, January 2016 – December 2017*
+
+- Microbiology Lecture: Designed quiz questions and worksheets, held weekly office hours, lead pre exam study sessions, and graded projects
+- Biology Lab: Organized lab prep materials, instructed students on proper lab technique, and held office hours
+
+## Leadership Experience
+
+**STRONG WOMEN, STRONG GIRLS, Pittsburgh, PA**
+
+*Mentor and Executive Board Member, January 2017 – April 2018*
+
+- Mentored girls in grades 3 to 5 weekly in under-resourced communities to provide supportive relationships and teach important life skills such as leadership and critical thinking
+- 2017-2018 Executive Board Member: Organized the largest yearly fundraiser through the annual 5K; raised over $4,000 for the organization for the following year of mentoring to provide needed supplies 
 
 
