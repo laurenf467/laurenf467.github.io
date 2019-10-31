@@ -23,13 +23,13 @@ nyc_airbnb =
   nyc_airbnb %>% 
   select(neighbourhood_group, neighbourhood, review_scores_location, price, room_type, lat, long, number_of_reviews, reviews_per_month, availability_365) %>% 
   filter(!is.na(review_scores_location), price %in% 50:500, neighbourhood_group == "Manhattan") %>%
-  sample_n(5000)
+  sample_n(3000)
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Price of Manhattan AirBnB's plotted based on longitude
 
 ```{r}
 nyc_airbnb %>% mutate(text_label = str_c("Neighborhood: ", neighbourhood, " Rating: ", review_scores_location)) %>% 
@@ -39,7 +39,7 @@ nyc_airbnb %>% mutate(text_label = str_c("Neighborhood: ", neighbourhood, " Rati
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Average price of AirBnB Rentals based on Manhattan Neighborhood 
 
 ```{r}
 nyc_airbnb %>% group_by(neighbourhood) %>% 
@@ -55,7 +55,7 @@ nyc_airbnb %>% group_by(neighbourhood) %>%
           error_y = ~list(array = std_dev), text = ~text_label)
 ```
 
-### Chart C
+### Box Plot of AirBnB Private Rooms in Manhattan
 
 ```{r}
 nyc_airbnb %>% filter(room_type == "Private room") %>% 
